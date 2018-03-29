@@ -1,0 +1,23 @@
+body {
+  font-family: 'Raleway', sans-serif;
+  background-color: lightgrey;
+}
+
+img {
+  height: 20rem;
+  width: 70%;
+  margin-top: 2rem;
+}
+
+#list {
+  border: 2px solid black;
+}
+
+.box-div {
+  border: 1px solid black;
+  margin-top: 2rem;
+}
+
+.visited {
+  text-decoration: line-through;
+}
