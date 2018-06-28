@@ -13,8 +13,13 @@ class App extends Component {
   }
 
   crossOut(id) {
-    let newArray = this.state.visitedIds.concat(id)
-    this.setState({visitedIds: newArray})
+    if (this.state.visitedIds.includes(id)){
+      let newestArray = this.state.visitedIds.filter(visitedId => visitedId !== id)
+      this.setState({visitedIds: newestArray})
+    } else {
+      let newArray = this.state.visitedIds.concat(id)
+      this.setState({visitedIds: newArray})
+    }
   }
 
   render() {
